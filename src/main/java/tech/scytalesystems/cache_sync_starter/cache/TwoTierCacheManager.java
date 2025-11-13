@@ -16,9 +16,7 @@ import java.util.stream.Stream;
  * <p>Two-tier cache manager that provides L1 (Caffeine) + L2 (Redis) caching.
  * <p>When getting a cache, wraps both tiers in a TwoTierCache.
  */
-public record TwoTierCacheManager(
-        CaffeineCacheManager caffeineCacheManager,
-        RedisCacheManager redisCacheManager) implements CacheManager {
+public record TwoTierCacheManager(CaffeineCacheManager caffeineCacheManager, RedisCacheManager redisCacheManager) implements CacheManager {
     @Override
     public Cache getCache(@NonNull String name) {
         Cache l1 = caffeineCacheManager.getCache(name);
