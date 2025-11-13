@@ -1,8 +1,8 @@
 # Cache Sync Starter
 
-[![Maven Central](https://img.shields.io/badge/maven--central-0.1.0-blue.svg)](https://search.maven.org/)
+[![Maven Central](https://img.shields.io/badge/maven--central-1.0.0-blue.svg)](https://search.maven.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-brightgreen.svg)](https://spring.io/projects/spring-boot)
 
 A production-ready Spring Boot starter providing hybrid caching (Caffeine + Redis) with automatic cache invalidation 
 propagation across distributed service instances via Redis Pub/Sub.
