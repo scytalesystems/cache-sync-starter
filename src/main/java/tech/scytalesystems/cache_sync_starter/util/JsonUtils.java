@@ -15,7 +15,7 @@ import tools.jackson.datatype.jsr310.JavaTimeModule;
  * Time 1148h
  */
 @Configuration
-//@SuppressWarning("all")
+@SuppressWarnings("unused")
 public class JsonUtils {
     @Bean
     @Primary
