@@ -9,17 +9,17 @@ propagation across distributed service instances via Redis Pub/Sub.
 
 ## Table of Contents
 
-- [Features](# features)
-- [Architecture](# architecture)
-- [Installation](# installation)
-- [Quick Start](# quick-start)
-- [Configuration](# configuration)
-- [Usage Examples](# usage-examples)
-- [Actuator Endpoint](# actuator-endpoint)
-- [Testing](# testing)
-- [Advanced Configuration](# advanced-configuration)
-- [Contributing](# contributing)
-- [License](# license)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Configuration](#configuration)
+- [Usage Examples](#usage-examples)
+- [Actuator Endpoint](#actuator-endpoint)
+- [Testing](#testing)
+- [Advanced Configuration](#advanced-configuration)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
