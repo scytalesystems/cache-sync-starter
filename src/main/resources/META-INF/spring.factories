@@ -1,3 +1,4 @@
 # Spring Boot 2.7+ auto-configuration
 tech.scytalesystems.cache_sync_starter.config.CacheSyncAutoConfiguration
 tech.scytalesystems.cache_sync_starter.config.JacksonConfig
+tech.scytalesystems.cache_sync_starter.config.CacheSyncEndpointConfiguration

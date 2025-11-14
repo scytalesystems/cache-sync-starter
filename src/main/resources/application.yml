@@ -1,3 +1,18 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: cache-sync
+  endpoint:
+    cache-sync:
+      enabled: true
+
+spring:
+  security:
+    user:
+      name: admin
+      password: ${ACTUATOR_PASSWORD}
+
 app:
   name: "@project.name@"
   description: "@project.description@"

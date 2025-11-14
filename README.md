@@ -309,13 +309,16 @@ management:
     web:
       exposure:
         include: cache-sync
+  endpoint:
+    cache-sync:
+      enabled: true
 ```
 
 ### Available Operations
 
-**GET `/actuator/cache-sync`**
+#### Read Operations:
 
-View recent cache synchronization messages:
+**GET `/actuator/cache-sync`** - Comprehensive status, config, and cache info
 
 ```json
 {
@@ -345,15 +348,21 @@ View recent cache synchronization messages:
 }
 ```
 
-**POST `/actuator/cache-sync/clear`**
+**GET `/actuator/cache-sync/caches`** - Detailed cache listing
 
-Manually trigger cache clearing (requires admin privileges):
+#### Write Operations:
+
+**POST `/actuator/cache-sync/evict`** - Evict specific keys
+
+**POST `/actuator/cache-sync/clear`** - Clear entire cache
 
 ```bash
 curl -X POST http://localhost:8080/actuator/cache-sync/clear \
   -H "Content-Type: application/json" \
   -d '{"cacheName": "products"}'
 ```
+
+**POST `/actuator/cache-sync/clear-all`** - Clear ALL caches (use with caution!)
 
 ## Testing
 
