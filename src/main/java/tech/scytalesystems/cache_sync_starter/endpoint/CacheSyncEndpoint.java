@@ -38,9 +38,7 @@ import java.util.*;
  * <p>
  * Configuration:
  * management.endpoints.web.exposure.include=cache-sync
- * management.endpoint.cache-sync.enabled=true
- *
- * @author Gathariki Ngigi
+ * management.endpoint.cache-sync.enabled=true
  */
 @Component
 @Endpoint(id = "cache-sync")
