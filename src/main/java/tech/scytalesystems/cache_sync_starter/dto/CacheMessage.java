@@ -1,5 +1,6 @@
 package tech.scytalesystems.cache_sync_starter.dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.Objects;
  * <p>Contains information about which cache and keys to evict or clear.
  */
 @SuppressWarnings("unused")
-public class CacheMessage {
+public class CacheMessage implements Serializable {
     private String cacheName;
     private List<String> keys;
     private CacheAction action;
