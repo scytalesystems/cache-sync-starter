@@ -5,9 +5,7 @@ import org.springframework.lang.NonNull;
 
 import java.util.concurrent.Callable;
 
-/**
- * @param l1Cache Caffeine
- * @param l2Cache Redis
+/**
  * @author Gathariki Ngigi
  * Created on 13/11/2025
  * Time 1647h
