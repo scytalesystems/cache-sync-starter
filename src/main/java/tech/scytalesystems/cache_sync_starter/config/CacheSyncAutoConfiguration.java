@@ -17,6 +17,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import tech.scytalesystems.cache_sync_starter.aspect.CacheEvictAspect;
 import tech.scytalesystems.cache_sync_starter.cache.TwoTierCacheManager;
@@ -141,5 +142,10 @@ public class CacheSyncAutoConfiguration {
     @ConditionalOnMissingBean
     public CacheEvictAspect cacheEvictAspect(CacheSyncService cacheSyncService) {
         return new CacheEvictAspect(cacheSyncService);
+    }
+
+    @Bean
+    public RedisSerializer<Object> redisSerializer() {
+        return new GenericJackson2JsonRedisSerializer(new JacksonConfig().objectMapper());
     }
 }
