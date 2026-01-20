@@ -80,6 +80,26 @@ propagation across distributed service instances via Redis Pub/Sub.
 
 ## Installation
 
+### Create or update ~/.m2/settings.xml:
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0
+                              https://maven.apache.org/xsd/settings-1.2.0.xsd">
+
+    <servers>
+        <server>
+            <id>github</id>
+            <username>YOUR_GITHUB_USERNAME</username>
+            <password>YOUR_GITHUB_TOKEN</password>
+        </server>
+    </servers>
+
+</settings>
+
+```
+
 ### Maven
 
 Add the starter dependency to your `pom.xml`:
@@ -557,3 +577,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For issues, questions, or feature requests, please [open an issue](https://github.com/scytalesystems/cache-sync-starter/issues).
 
 **13 Nov 2025**
+
